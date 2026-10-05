@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>NEET Full Mock Test</title>
+<style>
+body{font-family:Arial;background:#f4f6f8;margin:0;padding:15px}
+.box{max-width:800px;margin:auto;background:white;padding:20px;border-radius:15px;box-shadow:0 2px 10px #bbb}
+h1{text-align:center;color:#176b3a}
+button{padding:12px 20px;border:0;border-radius:8px;background:#176b3a;color:white;font-size:16px;margin:5px}
+button:hover{opacity:.85}
+#timer{position:sticky;top:0;background:#111;color:white;text-align:center;padding:12px;font-size:22px;border-radius:8px}
+.q{border:1px solid #ddd;padding:15px;margin:15px 0;border-radius:10px}
+.opt{display:block;padding:9px;margin:6px 0;background:#f1f1f1;border-radius:6px}
+.result{background:#e8f5e9;padding:18px;border-radius:10px;font-size:18px}
+.hide{display:none}
+</style>
+</head>
+
+<body>
+
+<div class="box">
+
+<div id="start">
+<h1>NEET FULL MOCK TEST</h1>
+<h3>180 Questions | 720 Marks</h3>
+<p>Physics: 45 Questions</p>
+<p>Chemistry: 45 Questions</p>
+<p>Biology: 90 Questions</p>
+<p><b>Correct = +4 | Wrong = -1</b></p>
+<button onclick="showTimer()">START TEST</button>
+</div>
+
+<div id="timerPage" class="hide">
+<h1>Test Ready</h1>
+<p>Time: <b>3 Hours</b></p>
+<p>180 Questions • Maximum 720 Marks</p>
+<button onclick="startTest()">START QUESTIONS</button>
+</div>
+
+<div id="test" class="hide">
+<div id="timer">03:00:00</div>
+<div id="questions"></div>
+<button onclick="submitTest()">SUBMIT TEST</button>
+</div>
+
+<div id="result" class="hide"></div>
+
+</div>
+
+<script>
+
+const physics=[
+["The dimensional formula of Planck's constant is:",["ML²T⁻¹","MLT⁻¹","ML²T⁻²","M⁰L⁰T⁰"],0],
+["A body starts from rest with acceleration 2 m/s². Its velocity after 5 s is:",["5 m/s","10 m/s","15 m/s","20 m/s"],1],
+["The SI unit of electric field is:",["N/C","C/N","J/C","N·m"],0],
+["Escape velocity from Earth depends on:",["Mass of body","Radius and mass of Earth","Shape of body","Temperature"],1],
+["For uniform circular motion, acceleration is directed:",["Tangentially","Outward","Toward centre","Zero"],2],
+["Work done by centripetal force in uniform circular motion is:",["Positive","Negative","Zero","Infinite"],2],
+["The frequency of a wave is 50 Hz. Its time period is:",["0.02 s","0.2 s","2 s","20 s"],0],
+["A convex lens has focal length 20 cm. Its power is:",["+2 D","+5 D","-5 D","+20 D"],1],
+["The resistance of a conductor is proportional to:",["Area","Length","1/Length","Voltage only"],1],
+["Ohm's law relates:",["V,I,R","P,Q,t","F,m,a","E,m,c"],0],
+["The kinetic energy of a particle is proportional to:",["v","v²","1/v","v³"],1],
+["Momentum is:",["mv","ma","m/v","v/m"],0],
+["Acceleration due to gravity is maximum at:",["Equator","Poles","Centre
